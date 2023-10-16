@@ -1,10 +1,13 @@
-# Title (replace with your title)
+# Matching a Hex Value 
 
-Introductory paragraph (replace this with your text)
+A regex is a "regular expression", which means a series of characters that define a search pattern. These are useful in JavaScript and though they may not make sense at first glance, different regexs can be used to verify user input such as a username, email, URL, HTML, or as we will review today: a hex value. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Hexadecimal codes, or hex codes, are used to refer to colors. Like most information used to communicate with our computers, a hex code needs to be in a certain format. This includes starting with a "#" symbol, consisting of letters A thru F and numbers 0-9, and be either 3 or 6 characters long. The following regex verifies that the input provided to identify a hex code meets these criteria: 
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/ 
+
+In this tutorial we will explain why and how this regex works. 
 
 ## Table of Contents
 
