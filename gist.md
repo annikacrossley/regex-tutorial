@@ -4,7 +4,8 @@ A regex is a "regular expression", which means a series of characters that defin
 
 ## Summary
 
-Hexadecimal codes, or hex codes, are used to refer to colors. Like most information used to communicate with our computers, a hex code needs to be in a certain format. This includes starting with a "#" symbol, consisting of letters A thru F and numbers 0-9, and be either 3 or 6 characters long. The following regex verifies that the input provided to identify a hex code meets these criteria: 
+Hexadecimal codes, or hex codes, are used to refer to colors. Like most information used to communicate with our computers, a hex code needs to be in a certain format. This includes starting with a "#" symbol, consisting of letters A thru F and numbers 0-9, and be either 3 or 6 characters long. The following regex verifies that the input provided to identify a hex code meets these criteria: <br>
+
 /^#?([a-f0-9]{6}|[a-f0-9]{3})$/ 
 
 In this tutorial we will explain why and how this regex works. 
@@ -25,7 +26,16 @@ In this tutorial we will explain why and how this regex works.
 
 ## Regex Components
 
+A regex is wrapped in slashes ("/") because it is a literal (a fixed value in JavaScript). If we look at our hex matching regex, we can see that it is wrapped in slashes: 
+<br>
+
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/ 
+
+Next, we will examine the anchors of the hex value regex. 
+
 ### Anchors
+
+An anchor
 
 ### Quantifiers
 
